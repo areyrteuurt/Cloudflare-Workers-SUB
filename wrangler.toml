@@ -1,0 +1,25 @@
+name = "workers-sub"
+compatibility_date = "2024-03-20"
+usage_model = "bundled"
+main = "_worker.js"
+
+kv_namespaces = [
+  { binding = "SUBSCRIPTION_STORE", id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" }
+]
+
+[vars]
+TOKEN = "auto"
+GUEST_TOKEN = "guest"
+SUB_NAME = "Workers-SUB Subscription"
+PAGE_TITLE = "Workers-SUB Subscription"
+PAGE_DESCRIPTION = "一个基于Cloudflare Workers的订阅转换工具"
+THEME_COLOR = "#3498db"
+CACHE_TTL = "3600"
+MAX_NODES = "500"
+
+# 可选：添加默认订阅链接（每行一个）
+LINKS = """
+https://example.com/subscribe/link1
+https://example.com/subscribe/link2
+vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIuWKoOWFpeaIkeeahOmikemBk3QubWUvQ01MaXVzc3Nz6Kej6ZSB5pu05aSa5LyY6YCJ6IqC54K5IiwNCiAgImFkZCI6ICJjZi4wOTAyMjcueHl6IiwNCiAgInBvcnQiOiAiODQ0MyIsDQogICJpZCI6ICIwM2ZjYzYxOC1iOTNkLTY3OTYtNmFlZC04YTM4Yjk3NWQ1ODEiLA0KICAiYWlkIjogIjAiLA0KICAic2N5IjogImF1dG8iLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogInBwZnYydGw5dmVvamQtbWFpbGxhenkucGFnZXMuZGV2IiwNCiAgInBhdGgiOiAiL2phZGVyLmZ1bjo0NDMvbGlua3Z3cyIsDQogICJ0bHMiOiAidGxzIiwNCiAgInNuaSI6ICJwcGZ2MnRsOXZlb2pkLW1haWxsYXp5LnBhZ2VzLmRldiIsDQogICJhbHBuIjogIiIsDQogICJmcCI6ICIiDQp9
+"""
